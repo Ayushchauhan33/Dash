@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="lock-screen">
+        <h2>Please Enter Your Mobile Number</h2>
+        <input type="text" id="mobile-number" placeholder="Enter mobile number">
+        <button onclick="unlock()">Unlock</button>
+        <p id="error-message"></p>
+    </div>
+
+    <div id="unlocked-content" style="display: none;">
+        <h2>Click the button below at your own risk!</h2>
+        <button onclick="revealTruth()">See My Reality</button>
+        <h1 id="reality-text"></h1>
+        <button id="ask-why-button" style="display: none;" onclick="showExplanation()">Ask Why</button>
+    </div>
+
+    <div id="explanation-content" style="display: none;">
+        <p id="explanation-text"></p>
+        <p id="proof-prompt" style="display: none;">I know you don't believe that I made this website. If you don't, then click proof.</p>
+        <button id="proof-button" style="display: none;" onclick="showProof()">Proof</button>
+        <div id="proof-content" style="display: none;">
+            <p>Khushal = Bharat</p>
+            <p>Kunj = Girish</p>
+            <p>Gopal = Sunil</p>
+            <p>Pranshu = Jignesh</p>
+            <p>Nitin = Niraj</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
